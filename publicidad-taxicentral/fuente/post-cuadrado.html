@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>TaxiCentral — Post 1080</title>
+<link rel="stylesheet" href="comun.css">
+<style>
+  body { width: 1080px; height: 1080px; overflow: hidden; }
+  .lienzo {
+    width: 1080px; height: 1080px; position: relative; overflow: hidden; color: #fff;
+    background: radial-gradient(90% 70% at 90% 0%, #2c3150 0%, var(--noche) 60%);
+    padding: 70px 72px 0;
+  }
+  .marca { font-size: 40px; color: #fff; }
+  h1 { font-size: 76px; line-height: 1.02; font-weight: 900; letter-spacing: -.02em; margin-top: 42px; }
+  h1 em { font-style: normal; color: var(--oro); }
+  .sub { font-size: 30px; line-height: 1.35; color: #c8cbe0; margin-top: 24px; max-width: 880px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+  .chip { font-size: 24px; font-weight: 600; padding: 12px 22px; border-radius: 99px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); }
+  .chip b { color: var(--oro); }
+  .laptop { position: absolute; left: 150px; right: -120px; bottom: -30px; font-size: 22px; }
+  .cta {
+    position: absolute; left: 72px; bottom: 64px; z-index: 3;
+    background: var(--oro); color: var(--noche); font-family: 'Montserrat'; font-weight: 900;
+    font-size: 30px; padding: 22px 32px; border-radius: 18px; box-shadow: 0 20px 40px rgba(0,0,0,.45);
+  }
+  .cta small { display: block; font-family: 'Inter'; font-weight: 600; font-size: 22px; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="lienzo">
+  <div class="marca"><img src="img/logo.png" alt=""><span>Taxi<b>Central</b></span></div>
+  <h1>Su central de taxis,<br><em>sin papel</em> y sin llamadas perdidas.</h1>
+  <p class="sub">Suena el teléfono y el cliente ya aparece en pantalla con su dirección.</p>
+  <div class="chips">
+    <span class="chip"><b>✓</b> Identificador de llamadas</span>
+    <span class="chip"><b>✓</b> Turnos justos por unidad</span>
+    <span class="chip"><b>✓</b> Cronómetro por carrera</span>
+    <span class="chip"><b>✓</b> Reportes en Excel</span>
+  </div>
+  <div class="laptop">
+    <div class="pantalla"><img class="recorte" src="img/despacho.png" alt=""></div>
+    <div class="base"></div>
+  </div>
+  <div class="cta">Solicite una demostración<small>WhatsApp: 09X XXX XXXX</small></div>
+</div>
+</body>
+</html>

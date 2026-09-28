@@ -1,0 +1,59 @@
+@import url('fuentes.css');
+
+:root {
+  --noche: #161a23;
+  --noche-2: #1e1e2d;
+  --panel: #252538;
+  --oro: #e6a817;
+  --oro-claro: #f5c542;
+  --azul: #3699ff;
+  --verde: #1bc5bd;
+  --rojo: #e55353;
+  --texto: #1d2230;
+  --gris: #5d6475;
+  --claro: #f6f4ef;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Inter', 'DejaVu Sans', sans-serif;
+  color: var(--texto);
+  background: #fff;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+h1, h2, h3, .marca { font-family: 'Montserrat', 'DejaVu Sans', sans-serif; }
+
+.marca { display: flex; align-items: center; gap: .45em; font-weight: 800; letter-spacing: -.01em; }
+.marca img { height: 1.6em; width: 1.6em; background: #fff; border-radius: 50%; padding: .08em; }
+.marca span b { color: var(--oro); font-weight: 800; }
+
+/* Portátil hecho en CSS alrededor de una captura real */
+.laptop { position: relative; }
+.laptop .pantalla {
+  background: #0c0e14;
+  border-radius: 1.1em 1.1em 0 0;
+  padding: 2.2% 2.2% 2.6%;
+  box-shadow: 0 1.5em 3em rgba(0,0,0,.35);
+  border: 1px solid #2c3140;
+}
+.laptop .pantalla img { display: block; width: 100%; border-radius: .2em; }
+.laptop .pantalla img.recorte { aspect-ratio: 1920 / 590; object-fit: cover; object-position: left top; }
+.laptop .base {
+  height: 1.1em;
+  margin: 0 -7%;
+  background: linear-gradient(#c9ccd4, #8d919b);
+  border-radius: 0 0 1.4em 1.4em;
+  position: relative;
+}
+.laptop .base::after {
+  content: ""; position: absolute; left: 42%; right: 42%; top: 0; height: .35em;
+  background: #7a7e88; border-radius: 0 0 .5em .5em;
+}
+
+.icono {
+  width: 2.6em; height: 2.6em; border-radius: .8em;
+  display: grid; place-items: center; flex: none;
+  background: var(--noche); color: var(--oro);
+}
+.icono svg { width: 1.45em; height: 1.45em; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
