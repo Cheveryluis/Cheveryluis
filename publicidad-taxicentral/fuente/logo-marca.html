@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><title>Logo TaxiCentral</title>
+<link rel="stylesheet" href="comun.css">
+<style>
+  html, body { background: transparent; }
+  .marca { font-size: 120px; padding: 40px 60px; display: inline-flex; }
+  body.oscuro .marca { color: #fff; }
+  body.claro .marca { color: var(--noche); }
+  body.claro .marca img { background: transparent; padding: 0; }
+</style></head>
+<body><div class="marca" id="m"><img src="img/logo.png" alt=""><span>Taxi<b>Central</b></span></div>
+<script>document.body.className = location.hash.slice(1) || 'oscuro';</script>
+</body></html>
